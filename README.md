@@ -1,1 +1,1 @@
-# Custom Date picker for android , code is self explained 
+# Custom Date picker for angular , code is self explained 
