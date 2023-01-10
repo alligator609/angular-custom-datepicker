@@ -1,0 +1,19 @@
+<!-- date-picker.component.html -->
+
+<div class="date-picker">
+  <div class="date-picker-section">
+    <!-- <label>Day:</label> -->
+    <select [(ngModel)]="selectedDay" (change)="onDateChange()">
+      <option *ngFor="let day of days" [value]="day">{{ day }}</option>
+    </select>
+  </div>
+  <div class="date-picker-section">
+    <!-- <label>Month:</label> -->
+    <select [(ngModel)]="selectedMonth" (change)="onDateChange()">
+      <option *ngFor="let month of monthNames; let i = index" [value]="i + 1">{{ month }}</option>
+    </select>
+  </div>
+  <div class="date-picker-section">
+    <!-- <label>Year:</label> -->
+    <select [(ngModel)]="selectedYear" (change)="onDateChange()">
+      <option *ngFor="let year of years" [value]="year">{{ year }}</option>
